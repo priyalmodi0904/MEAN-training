@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            alert("hhhyyyy")
+        }
+
+        function fun1(){
+          var obj=  document.getElementById("lbl");
+          alert(obj.innerText);
+
+        }
+        function fun2(){
+            var ob=document.getElementById("lbl");
+            ob.innerText="good night priyal"
+        }
+
+        function fun3(){
+            var o1=document.getElementById("p1");
+            o1.innerText="hello priyal modi"   //changing the data
+        }
+        function fun4(){
+            var o2=document.getElementById("p1");
+            alert(o2.innerText)  //accessing the data
+        }
+        function fun5(){
+            var o3=document.getElementById("t1");
+            o3.value="priyal"
+        }
+        function fun6(){
+            var o4=document.getElementById("t1");
+            alert(o4.value);  //acessing the data
+        }
+    </script>
+</head>
+<body>
+    <h1 id="lbl" onclick="alert('good morning')"> Acropolis</h1>
+    <button onclick="alert('hello')">Okay</button>
+    <button onclick="fun()">submit</button>
+
+    <hr>
+    <button onclick="fun1()">okay</button>
+    <button onclick="fun2()" >okay</button>
+
+    <hr>
+
+    <h1  id="p1" onclick="fun4()">Hello </h1>
+    <button onclick="fun3()">submit</button>
+
+    <hr>
+    <input type="text" id="t1"> <br><br>
+    <button onclick="fun5()" >register</button>
+    <button onclick="fun6()">submit</button>
+    </body>
+    <html>
+
+
+
+
+<!-- innerText works on opening and closing tag -->
+ <!-- by innerText you can access the data and change the data -->

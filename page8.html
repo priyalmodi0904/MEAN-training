@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>student list</b>
+    <br><br>
+    <input type="text" id="t1" placeholder="enter" >
+    <button onclick="add()">add</button>
+
+
+    <ol id="lst">
+        <li>priyal</li>
+        <li>riddhi</li>
+    </ol>
+</body>
+<script>
+    function add(){
+        var lst=document.getElementById('lst')
+        var name=document.getElementById('t1').value;
+    
+
+        var liobj=document.createElement("li");
+        liobj.innerText=name;
+        lst.appendChild(liobj);
+    }
+</script>
+</html>

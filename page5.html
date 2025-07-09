@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function fun(){
+        var o= document.getElementById("t1");
+        if(o.type=="password"){
+            o.type="text"
+        }
+        else{
+            o.type="password";
+        }
+
+    }
+</script>
+</head>
+<body>
+    <input id="t1" type="password">
+    <button onclick="fun()"> okay</button>
+</body>
+</html>

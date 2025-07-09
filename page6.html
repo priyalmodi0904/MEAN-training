@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+           var x= parseInt(document.getElementById("t1").value);
+           var y= parseInt(document.getElementById("t2").value);
+           var z=x+y;
+
+           document.getElementById("res").innerText=z;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculation Demo</h1>
+    <input type="number" placeholde="first number" id="t1">
+    <input type="number" placeholder="second nuber" id="t2">
+    <br><br>
+    <b>Result:  <span id="res">0</span></b>
+    <button onclick="add()">Addition</button>
+</body>
+</html>
+
+
+<!-- script tag is written after body <-preffered
+ Css is written before body inside head tag -->

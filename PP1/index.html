@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="init()">
+    <h1 id="lbl">student records</h1>
+    <hr>
+    <b>ADD new record</b>
+    <br><br><br>
+    <form onsubmit="add(event)">  
+    <input type="text" class="box" id="rollbox" placeholder="Roll no." required>
+
+    <!-- nbsp is used for space between the input boxes -->
+    &nbsp; &nbsp; &nbsp;                                       
+    <input class="box" type="text" id="branchbox" placeholder="Branch" required>
+     &nbsp; &nbsp; &nbsp;  
+    <input class="box" type="text" id="javabox" placeholder="java marks" required>
+     &nbsp; &nbsp; &nbsp;  
+     <input class="box" type="text" id="cppbox" placeholder="cpp marks" required>
+     <br><br><br><br>
+     <!-- <input type="number" id="totalbox" placeholder="total" class="box">
+      &nbsp; &nbsp; &nbsp;  -->
+      <br><br><br><br>
+
+      
+
+     <button >ADD student</button>
+     &nbsp; &nbsp; &nbsp; 
+     <button type="button" onclick="save()">Save</button>
+     
+    
+    </form>
+     <br><br><br><br>
+    <table border="1" align="center" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Roll no.</th>
+                <th>Branch</th>
+                <th>java</th>
+                <th>cpp</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody id="tbo">
+            <tr>
+                <td>101</td>
+                <td>CSE</td>
+                <td>67</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+<!-- external js -->
+<script src="./code.js"></script>   
+</html>
+
+
+
+<!-- 
+form tag steps:
+1.validation
+2.onsubmit() event only works on form tag
+3. data send to server
+
+
+
+-->

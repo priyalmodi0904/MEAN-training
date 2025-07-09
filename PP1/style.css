@@ -1,0 +1,21 @@
+#lbl{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    border-radius:5%;
+
+}
+
+.box{
+    width:300px;
+    box-shadow:1px 1px red;
+    font-weight:700;
+}
+.btn{
+
+    color: white;
+    font-weight:700;
+ 
+    
+    
+}

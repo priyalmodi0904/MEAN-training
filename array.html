@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[2,"hello",true,67];
+        console.log(arr);
+        console.log(arr[3]);
+        arr.push(33,44);
+        console.log(arr)
+        
+        arr.splice(3,2);   //third index se do element remove ho jaynge
+        arr.splice(3,0,113,22); //third index se kuch delete nhi krna but do value jo likhi h vo add krna h 
+        for(var x in arr){
+            console.log(arr[x]); //works on index
+        }
+        for(var x of arr){
+            console.log(x);   //works on value
+        }
+    </script>
+</body>
+</html>

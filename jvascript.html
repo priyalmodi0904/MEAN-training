@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Priyal Modi</h1>
+    <!-- <script>
+
+        //we can use parsefloat
+
+        document.write("Hello world <br>")
+        document.write("<b> Good morning </b>")
+        var x=parseInt(prompt("second number"))
+        var y=parseInt(prompt("second number"));
+        var z=x+y;
+        document.write("addition",z);
+    </script> -->
+
+    <!-- <script>
+        var age=parseInt(prompt("enter your age"));
+        if(age>=18){
+            document.write("<h3 style='color:green'>you can vote</h3>");
+
+        }
+        else{
+            document.write("<h3 style='color:red'>you cannot vote</h3>")
+        }
+    </script> -->
+
+
+
+    <script>
+        function voting(){
+            var nat=prompt("Are you indian(Y/N)");
+        if(nat=='Y' || nat=='y'){
+            var age=parseInt(prompt("enter your age"));
+            if(age>=18){
+            document.write("<h3 style='color:green'>you can vote</h3>");
+
+        }
+         else{
+
+            document.write("<h3 style='color:red'>you cannot vote</h3>")
+        }
+    } 
+    else{
+             if(nat=='N' || nat=='n'){
+             document.write("<h3 style='color:red'>not allowed</h3>")
+
+        }
+
+
+    }
+}
+var x=parseInt(prompt("enter the number"));
+    for(var i=1;i<=x;i++){
+        var name=prompt("enter your name");
+        document.write(name);
+        voting();
+    }
+
+        
+
+       
+    </script>
+
+</body>
+</html>
