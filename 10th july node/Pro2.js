@@ -7,6 +7,6 @@ function fun(){
 }
 fun()();
 
-
+// hello 
 var ob=fun();
 ob();
