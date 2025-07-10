@@ -45,7 +45,8 @@ function add(evt){
 
 }
 function save(){
-    
+
+
 
 
 
@@ -66,6 +67,18 @@ function save(){
         }
     }
     // console.log(ob)
+
+    studs.push(ob) ;
+
     
 }
+localStorage.setItem("studData",JSON.stringify(studs));
+alert("data saved")
 }
+
+
+
+//JSON javascript notation (replaces the rss of xml)
+
+//Json.stringify(objname)  //used to convert data in to sting
+//ISON.parse(str)  //convert the string into data
