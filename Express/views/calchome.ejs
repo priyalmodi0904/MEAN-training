@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation page</title>
+</head>
+<body>
+    <h1>Basic Calculation</h1>
+    <h4>Get Request</h4>
+    <form action="/calc/add" method="get">
+        <input type="number" name="fnum" placeholder="first number" required>
+        <input type="number" name="snum" placeholder="second number" required>
+        <button>Addition</button>
+    </form>
+
+    <form action="/calc/mul" method="post">
+        <input type="number" name="fnum" placeholder="first number" required>
+        <input type="number" name="snum" placeholder="second number" required>
+        <button>Multipy</button>
+    </form>
+</body>
+</html>
+
+<!-- by default form tage have get method -->
